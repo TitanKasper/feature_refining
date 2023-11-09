@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-18T09:48:49Z" name="All Test Suite" finished-at="2023-10-18T09:50:59Z" duration-ms="130848">
+    <groups>
+    </groups>
+    <test started-at="2023-10-18T09:48:49Z" name="C:/Users/Thin Lay/androidpj/Automation/src/login.java" finished-at="2023-10-18T09:50:59Z" duration-ms="130848">
+      <class name="login">
+        <test-method signature="login()[pri:0, instance:login@2641e737]" started-at="2023-10-18T09:48:49Z" name="login" finished-at="2023-10-18T09:50:01Z" duration-ms="72659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- login -->
+      <class name="loginagain">
+        <test-method signature="loginagain()[pri:0, instance:loginagain@727803de]" started-at="2023-10-18T09:50:01Z" name="loginagain" finished-at="2023-10-18T09:50:59Z" duration-ms="58080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginagain -->
+      </class> <!-- loginagain -->
+    </test> <!-- C:/Users/Thin Lay/androidpj/Automation/src/login.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

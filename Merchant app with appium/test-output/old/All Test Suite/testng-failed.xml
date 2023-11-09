@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/Thin Lay/androidpj/Automation/src/login.java(failed)">
+    <classes>
+      <class name="login">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- login -->
+    </classes>
+  </test> <!-- C:/Users/Thin Lay/androidpj/Automation/src/login.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

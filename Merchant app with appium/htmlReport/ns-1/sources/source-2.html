@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > login</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: login (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">login</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    96.7%
+  </span>
+  <span class="absValue">
+    (29/30)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;import io.appium.java_client.MobileElement;
+&nbsp;import io.appium.java_client.TouchAction;
+&nbsp;import io.appium.java_client.android.AndroidDriver;
+&nbsp;import io.appium.java_client.android.AndroidElement;
+&nbsp;import io.appium.java_client.remote.MobileCapabilityType;
+&nbsp;import org.openqa.selenium.By;
+&nbsp;import org.openqa.selenium.Platform;
+&nbsp;import org.openqa.selenium.remote.DesiredCapabilities;
+&nbsp;import org.testng.Assert;
+&nbsp;
+&nbsp;
+&nbsp;import java.net.MalformedURLException;
+&nbsp;import java.net.URL;
+&nbsp;import java.util.concurrent.Delayed;
+&nbsp;
+&nbsp;import io.appium.java_client.touch.TapOptions;
+&nbsp;import org.openqa.selenium.support.ui.WebDriverWait;
+&nbsp;import org.openqa.selenium.support.ui.ExpectedConditions;
+&nbsp;import org.testng.annotations.Test;
+&nbsp;
+&nbsp;
+<b class="nc">&nbsp;public class login {</b>
+&nbsp;    @Test
+&nbsp;    public static void main(String[] args) throws MalformedURLException {
+&nbsp;
+<b class="fc">&nbsp;        DesiredCapabilities start = new DesiredCapabilities();</b>
+<b class="fc">&nbsp;        start.setCapability(MobileCapabilityType.DEVICE_NAME,  &quot;R9YT10CM89A&quot;);</b>
+<b class="fc">&nbsp;        start.setCapability(&quot;platformName&quot;,&quot;android&quot;);</b>
+<b class="fc">&nbsp;        start.setCapability(&quot;appPackage&quot;,&quot;com.momoney.subscriber.uat&quot;);</b>
+<b class="fc">&nbsp;        start.setCapability(&quot;appActivity&quot;,&quot;com.momoney.subscriber.MainActivity&quot;);</b>
+<b class="fc">&nbsp;        AndroidDriver&lt;AndroidElement&gt; dri = new AndroidDriver&lt;AndroidElement&gt;(new URL(&quot;http://0.0.0.0:4723/wd/hub&quot;), start);</b>
+<b class="fc">&nbsp;        WebDriverWait wait = new WebDriverWait(dri, 30); // Adjust the timeout as needed</b>
+<b class="fc">&nbsp;        MobileElement el1 = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.id(&quot;com.android.permissioncontroller:id/permission_allow_button&quot;)));</b>
+<b class="fc">&nbsp;        el1.click();</b>
+<b class="fc">&nbsp;        MobileElement el2 = (MobileElement) dri.findElementById(&quot;com.android.permissioncontroller:id/permission_allow_foreground_only_button&quot;);</b>
+<b class="fc">&nbsp;        el2.click();</b>
+<b class="fc">&nbsp;        MobileElement el3 = (MobileElement) wait.until(ExpectedConditions.presenceOfElementLocated(By.className(&quot;android.widget.EditText&quot;)));</b>
+<b class="fc">&nbsp;        el3.sendKeys(&quot;09952168096&quot;);</b>
+<b class="fc">&nbsp;        MobileElement el4 = (MobileElement) dri.findElementByClassName(&quot;android.view.View&quot;);</b>
+<b class="fc">&nbsp;        el4.click();</b>
+&nbsp;
+<b class="fc">&nbsp;        MobileElement el5 = (MobileElement) dri.findElementByXPath(&quot;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]&quot;);</b>
+<b class="fc">&nbsp;        el5.sendKeys(&quot;1&quot;);</b>
+<b class="fc">&nbsp;        MobileElement el6 = (MobileElement) dri.findElementByXPath(&quot;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]&quot;);</b>
+<b class="fc">&nbsp;        el6.sendKeys(&quot;1&quot;);</b>
+<b class="fc">&nbsp;        MobileElement el7 = (MobileElement) dri.findElementByXPath(&quot;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]&quot;);</b>
+<b class="fc">&nbsp;        el7.sendKeys(&quot;2&quot;);</b>
+<b class="fc">&nbsp;        MobileElement el8 = (MobileElement) dri.findElementByXPath(&quot;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[4]&quot;);</b>
+<b class="fc">&nbsp;        el8.sendKeys(&quot;2&quot;);</b>
+<b class="fc">&nbsp;        MobileElement el9 = (MobileElement) dri.findElementByXPath(&quot;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[5]&quot;);</b>
+<b class="fc">&nbsp;        el9.sendKeys(&quot;3&quot;);</b>
+<b class="fc">&nbsp;        MobileElement el10 = (MobileElement) dri.findElementByXPath(&quot;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[6]&quot;);</b>
+<b class="fc">&nbsp;        el10.sendKeys(&quot;3&quot;);</b>
+<b class="fc">&nbsp;        MobileElement el11 = (MobileElement) dri.findElementByXPath(&quot;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout&quot;);</b>
+<b class="fc">&nbsp;        el11.click();}</b>
+&nbsp;
+&nbsp;
+&nbsp;}
+&nbsp;//    Assert.assertEquals(dri.findElementById(&quot;com.momoney.subscriber.uat:id/action_bar_root&quot;));
+&nbsp;// Assert.assertTrue(dri.findElementByClass(&quot;android.widget.FrameLayout&quot;).displayed());
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-17 14:09</div>
+</div>
+</body>
+</html>
